@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Clog-Log</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="splash" class="splash-screen">
+    <h1 class="title">Clog-Log</h1>
+    <h2 class="loading-label">Loading<span id="emojiCycle"> 🐴</span></h2>
+    <div class="loading-bar-container">
+      <div class="progress-bar"></div>
+    </div>
+    <footer class="splash-footer">Powered by W Filby App Development</footer>
+  </div>
+
+  <div id="setup" style="display:none;">
+    <h2>Let’s get started</h2>
+    <input type="text" id="nameInput" placeholder="Your name" required />
+    <label>Preferred Reminder Day:</label>
+    <select id="reminderDay">
+      <option>Sunday</option><option>Monday</option><option>Tuesday</option>
+      <option>Wednesday</option><option>Thursday</option><option>Friday</option><option>Saturday</option>
+    </select>
+    <label>Preferred Time:</label>
+    <input type="time" id="reminderTime" required />
+    <button onclick="setPreferences()">Continue</button>
+  </div>
+
+  <div id="mainMenu" style="display:none;"></div>
+
+  <footer id="globalFooter">Powered by W Filby App Development</footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
